@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".update_note_activity">
+
+    <TextView
+        android:id="@+id/updateNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Catatan"
+        android:textColor="@color/blue"
+        android:layout_margin="12sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="24sp"/>
+
+    <ImageView
+        android:id="@+id/updatesaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="12dp"
+        app:tint ="@color/blue"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"/>
+
+    <EditText
+        android:id="@+id/updatetitleEt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Masukkan judul"
+        android:background="@drawable/blue_border"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_margin="12sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/updateNoteHeading"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <EditText
+        android:id="@+id/updatecontentEt"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Masukkan Deskripsi"
+        android:background="@drawable/blue_border"
+        android:padding="12dp"
+        android:layout_margin="12sp"
+        android:gravity="top"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/updatetitleEt"/>
+
+</RelativeLayout>
